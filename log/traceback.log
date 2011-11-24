@@ -1,0 +1,109 @@
+[2011/11/23 16:49:27] CRITICAL  \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 38, in run
+    self.uploader.login()
+  File "<stdin>", line 104, in login
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webelement.py", line 146, in send_keys
+    self._execute(Command.SEND_KEYS_TO_ELEMENT, {'value': typing})
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webelement.py", line 194, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 151, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/remote_connection.py", line 276, in execute
+    return self._request(url, method=command_info[0], data=data)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/remote_connection.py", line 317, in _request
+    response = opener.open(request)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 383, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 401, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 361, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 1130, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/urllib2.py", line 1103, in do_open
+    r = h.getresponse()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 950, in getresponse
+    response.begin()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 390, in begin
+    version, status, reason = self._read_status()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/httplib.py", line 348, in _read_status
+    line = self.fp.readline()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/socket.py", line 395, in readline
+    data = recv(1)
+KeyboardInterrupt
+
+[2011/11/23 16:49:53] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 68, in run
+    self.uploader.wait_for_upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 173, in wait_for_upload_apk
+    sleep(2)
+NameError: global name 'sleep' is not defined
+
+[2011/11/23 16:50:54] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 68, in run
+    self.uploader.wait_for_upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 173, in wait_for_upload_apk
+NameError: global name 'sleep' is not defined
+
+[2011/11/23 16:51:04] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 67, in run
+    upload_code = self.uploader.upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 118, in upload_apk
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 282, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 637, in find_element
+    {'using': by, 'value': value})['value']
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 153, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/errorhandler.py", line 126, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'The element could not be found' 
+
+[2011/11/23 16:51:11] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 67, in run
+    upload_code = self.uploader.upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 118, in upload_apk
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 282, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 637, in find_element
+    {'using': by, 'value': value})['value']
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 153, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/errorhandler.py", line 126, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'The element could not be found' 
+
+[2011/11/23 16:51:36] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 67, in run
+    upload_code = self.uploader.upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 118, in upload_apk
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 282, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 637, in find_element
+    {'using': by, 'value': value})['value']
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/webdriver.py", line 153, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Python/2.6/site-packages/selenium-2.12.1-py2.6.egg/selenium/webdriver/remote/errorhandler.py", line 126, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'The element could not be found' 
+
+[2011/11/23 16:51:47] CRITICAL /Users/bi2one/Desktop/packages/mobitle4.apk \\ Traceback (most recent call last):
+  File "UploadStates.py", line 21, in safe_run
+    self.run()
+  File "UploadStates.py", line 68, in run
+    self.uploader.wait_for_upload_apk()
+  File "/var/folders/5L/5LzhGMGmGxeU8KG9CuGs0++++TI/-Tmp-/python-33174m.py", line 173, in wait_for_upload_apk
+NameError: global name 'sleep' is not defined
+
